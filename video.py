@@ -317,6 +317,11 @@
 # elCar.battery.batteryValue()
 
 
-from printer import text
+# from printer import text
 
-print(text)
+# print(text)
+
+def loop(text, number):
+	print(text, number)
+
+loop('know', 32)
