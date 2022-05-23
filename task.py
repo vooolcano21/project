@@ -106,3 +106,38 @@
 # float1 = 4.2
 
 # print(type(float1))
+
+# years_list= [1999, 2000, 2001, 2002, 2003, 2004]
+# things = ["mozzarella", "cinderella", "salmonella"]
+# newThings = things[1].capitalize()
+# print(newThings)
+# newMoz = things[0].upper()
+# print(newMoz)
+
+# things.remove('salmonella')
+# print(things)
+
+# surprise = ["Groucho", "Chico", "Harpo"]
+# surprise[2] = 'harpo'
+# surprise.reverse()
+# surprise[0] = 'Harpo'
+# print(surprise)
+
+# even = [number for number in range(1, 10) if number % 2 == 0]
+# print(even)
+
+# start1 = ["fee", "fie", "foe"]
+# rhymes = [
+# 	("flop", "get a mop"),
+# 	("fope", "turn the rope"),
+# 	("fa", "get your ma"),
+# 	("fudge", "call the judge"),
+# 	("fat", "pet the cat"),
+# 	("fog", "walk the dog"),
+# 	("fun", "say we're done"),
+# ]
+# start2 = "Someone better"
+
+
+# for (first, second) in rhymes:
+# 	print(f'{first.capitalize()} {second}.')

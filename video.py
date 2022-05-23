@@ -321,7 +321,7 @@
 
 # print(text)
 
-def loop(text, number):
-	print(text, number)
+# def loop(text, number):
+# 	print(text, number)
 
-loop('know', 32)
+# loop('know', 32)

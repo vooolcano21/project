@@ -360,3 +360,63 @@
 # print(list1, ' and ', go)
 # print(list1.index('groove'))
 # print('groove' in list1)
+
+# words = ['lol', 'bow', 'wow', 'lol', 'bow', 'wow']
+# print(words.count('lol'))
+
+# separator = '*'
+# joined = separator.join(words)
+# splited = joined.split(separator)
+
+# print(joined) # lol*bow*wow*lol*bow*wow
+# print(splited) # 'lol', 'bow', 'wow', 'lol', 'bow', 'wow']
+
+# sorteed = sorted(words)
+# words.sort()
+# words.sort(reverse=True)
+# print(words, sorteed)
+
+# print(len(words))
+
+# a = [1, 2, 3]
+# b = a.copy()
+# c = list(a)
+# d = a[:]
+
+# print(a, b, c, d) # [1, 2, 3]
+
+# sortsOf = ['low', 'high', 'dream']
+
+# for cheese in sortsOf:
+# 	print(cheese)
+
+# for cheese in sortsOf:
+# 	if cheese.startswith('c'):
+# 		print('I dont want to eat it')
+# 		break
+# 	else:
+# 		print(cheese)
+# else:
+# 	print('i dont find anything with c')
+
+# days = ['Monday', 'Tuesday', 'Wednesday']
+# fruits = ['banana', 'orange', 'peach']
+# drinks = ['coffee', 'tea', 'beer']
+# desserts = ['tiramisu', 'ice cream', 'pie', 'pudding']
+
+# for day, drink, fruit, dessert in zip(days, fruits, drinks, desserts):
+# 	print(day, ": drink -", drink, ", eat -", fruit, ", enjoy -", dessert)
+
+# english = 'Monday', 'Tuesday', 'Wednesday'
+# french = 'Lundi', 'Mardi', 'Mercredi'
+
+# print(list(zip(english, french)))
+# print(dict(zip(english, french)))
+
+# numbers = [number for number in range(1, 8)]
+# print(numbers)
+
+# numbers2 = []
+# for number in range(1, 8):
+# 	numbers2.append(number)
+# print(numbers2)
