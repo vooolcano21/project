@@ -141,3 +141,79 @@
 
 # for (first, second) in rhymes:
 # 	print(f'{first.capitalize()} {second}.')
+
+
+#CLASS & OBJECT#
+
+# class Thing():
+# 	pass
+
+# class Thing2():
+# 	pass
+
+# letters = 'abc'
+
+# class Thing3():
+# 	letters = 'xyz'
+
+# print(Thing3.letters)
+
+# class Element():
+# 	def __init__(self, name, symbol, number):
+# 		self.__name = name
+# 		self.__symbol = symbol
+# 		self.__number = number
+
+# 	def dump(self):
+# 		return self.__name, self.__symbol, self.__number
+
+# 	def getName(self):
+# 		print(self.__name)
+
+# 	def getSymbol(self):
+# 		print(self.__symbol)
+
+# 	def getNum(self):
+# 		print(self.__number)
+
+# el = Element('Hydrogen', 'H', 1)
+
+# dictionary =  {
+# 	'name': 'Hydrogen',
+# 	'symbol': 'H',
+# 	'number': 1,
+# }
+
+# hydrogen = Element(**dictionary)
+# print(hydrogen.dump())
+# hydrogen.getName()
+
+# # #
+# class Laser():
+# 	def does(self):
+# 		return 'disintegrate'
+
+# class Claw():
+# 	def does(self):
+# 		return 'crush'
+
+# class SmartPhone():
+# 	def does(self):
+# 		return 'ring'
+
+# class Robot():
+# 	def __init__(self, laser, claw, smartPhone):
+# 		self.laser = laser
+# 		self.claw = claw
+# 		self.smartPhone = smartPhone
+
+# 	def does(self):
+# 		print(self.laser.does(), self.claw.does(), self.smartPhone.does())
+
+# laser1 = Laser()
+# claw1 = Claw()
+# smart = SmartPhone()
+
+# robot = Robot(laser1, claw1, smart)
+# robot.does()
+

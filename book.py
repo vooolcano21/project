@@ -420,3 +420,165 @@
 # for number in range(1, 8):
 # 	numbers2.append(number)
 # print(numbers2)
+
+# new_dict = {
+# 	'brand': 'Honda',
+# 	'model': 'Civic',
+# 	'year': 1995
+# 	}
+
+# old_dict = {
+# 	'solve': 'new'
+# }
+
+# new_dict.update(old_dict)
+# print(new_dict)
+# print(len(new_dict))
+
+# x = new_dict['brand']
+# x2 = new_dict.get('brand')
+# print(x, x2)
+
+# keys = dict.keys(new_dict)
+# values = dict.values(new_dict)
+# items = dict.items(new_dict)
+
+# print(keys, values, items)
+
+# for x in new_dict.keys():
+# 	print(x)
+
+# get = new_dict.pop('brand')
+# print(new_dict, get)
+
+# newOne = new_dict.copy()
+# print(newOne == new_dict)
+# newOne['brand'] = 'molly'
+# print(newOne, new_dict)
+
+# word = 'letters'
+
+# letters_count = {letter: word.count(letter) for letter in word}
+# print(letters_count)
+
+
+# drinks = {
+#  'martini': {'vodka', 'vermouth'},
+#  'black russian': {'vodka', 'kahlua'},
+#  'white russian': {'cream', 'kahlua', 'vodka'},
+#  'manhattan': {'rye', 'vermouth', 'bitters'},
+#  'screwdriver': {'orange juice', 'vodka'}
+#  }
+
+# for name, contents in drinks.items():
+# 	if 'vodka' in contents and not ('vermouth' in contents or 'cream' in contents):
+#  		print(name)
+
+# def knights(saying):
+# 	def inner(quote):
+# 		return print(f'We are the knights who say: {quote}')
+# 	return inner(saying)
+
+# knights('Vi!')
+
+# # Замыкание
+# def knights(saying):
+# 	def inner():
+# 		return print(f'We are the knights who say: {saying}')
+# 	return inner
+
+# closed = knights('Vi!')
+# closed()
+
+# #Лямба
+# #1
+# def area(a, b):
+# 	print(a * b)
+
+# print((lambda a, b: a * b)(14, 10)) # 140
+# #2
+# def maximum(a, b):
+# 	if a > b:
+# 		print(a)
+# 	else:
+# 		print(b)
+
+# print((lambda a, b: a if a > b else b))
+
+# def one():
+# 	'''
+# 	What a one sous isawo sqew
+# 	'''
+# 	print('f')
+
+# print(one.__doc__)
+
+# my_dict = {'a':1, 'b':2, 'c':3}
+
+# try:
+# 	value = my_dict['a']
+# except KeyError:
+# 	print('A KeyError occurred!')
+# else:
+# 	print('my_dict: No error occurred!')
+
+# class Hugo():
+# 	def __init__(self, name, age):
+# 		self.hidden_name = name
+# 		self.age = age
+
+# 	def change_age(self, num):
+# 		self.age += num
+
+# 	def showInfo(self):
+# 		print(f'Hi. I\'m {self.name} and I\'m {self.age} years old')
+
+# 	@property
+# 	def name(self):
+# 		return self.hidden_name
+
+# 	@name.setter
+# 	def name(self, newName):
+# 		self.hidden_name = newName
+
+# class LowHugo(Hugo):
+# 	def __init__(self, name, age, status):
+# 		super().__init__(name, age)
+# 		self.status = status
+
+# 	def lower(self):
+# 		print('Im lower')
+
+
+
+# frank = Hugo('Frank', 31)
+# john = LowHugo('John', 24, 'lower')
+
+# john.lower()
+# john.showInfo()
+# # john.set_name('BigJohn')
+# # print(john.get_name())
+# frank.name = 'Olof'
+# print(frank.name)
+
+# class Circle():
+# 	def __init__(self, radius):
+# 		self.__radius = radius
+
+# 	@classmethod
+# 	def printino(cls):
+# 		print('classmethod')
+
+# 	@property
+# 	def diameter(self):
+# 		return 2 * self.__radius
+
+# c = Circle(5)
+# c.printino()
+
+class Saying():
+	@staticmethod
+	def say():
+		print('this class is just saying this')
+
+Saying.say()
